@@ -1,0 +1,127 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Production readiness: static assets and canonical logo wiring",
+  "requirements": [
+    {
+      "id": "REQ-16",
+      "summary": "Ensure all static asset paths referenced by the marketing site resolve in production, including canonical generated logo and favicon assets.",
+      "acceptanceCriteria": [
+        "The site renders without broken-image icons for the header/footer logo and hero wordmark/background.",
+        "All static asset paths referenced in `frontend/src/App.tsx` exist under `frontend/public` with matching filenames and extensions."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/ngfc-logo.dim_1024x1024.png",
+          "operation": "create",
+          "description": "Add the canonical square logo asset under public static assets, ensuring it matches the filename referenced by `frontend/src/App.tsx`. Source should be the uploaded/derived generated logo from the workspace asset `generated/ngfc-logo.dim_1024x1024.png`."
+        },
+        {
+          "path": "frontend/public/assets/generated/ngfc-favicon.dim_64x64.png",
+          "operation": "create",
+          "description": "Add the required favicon-style icon as a public static asset. Source should be the uploaded/derived generated favicon image per the BuildRequest requirement."
+        },
+        {
+          "path": "frontend/public/assets/generated/ngfc-hero-bg.dim_2400x1350.png",
+          "operation": "create",
+          "description": "Ensure the hero background image exists at the exact public path referenced by `frontend/src/App.tsx`. Source should be the workspace asset `generated/ngfc-hero-bg.dim_2400x1350.png`."
+        },
+        {
+          "path": "frontend/public/assets/generated/ngfc-wordmark.dim_1800x600.png",
+          "operation": "create",
+          "description": "Ensure the hero wordmark image exists at the exact public path referenced by `frontend/src/App.tsx`. Source should be the workspace asset `generated/ngfc-wordmark.dim_1800x600.png`."
+        },
+        {
+          "path": "frontend/public/assets/gallery/whatsapp-image-2026-02-09-121110-1.jpeg",
+          "operation": "create",
+          "description": "Add gallery image at the exact public path referenced by `frontend/src/App.tsx`. Create from the corresponding uploaded workspace file `WhatsApp Image 2026-02-09 at 12.11.10 PM (1).jpeg`."
+        },
+        {
+          "path": "frontend/public/assets/gallery/whatsapp-image-2026-02-09-121110-2.jpeg",
+          "operation": "create",
+          "description": "Add gallery image at the exact public path referenced by `frontend/src/App.tsx`. Create from the corresponding uploaded workspace file `WhatsApp Image 2026-02-09 at 12.11.10 PM (2).jpeg`."
+        },
+        {
+          "path": "frontend/public/assets/gallery/whatsapp-image-2026-02-09-121110.jpeg",
+          "operation": "create",
+          "description": "Add gallery image at the exact public path referenced by `frontend/src/App.tsx`. Create from the corresponding uploaded workspace file `WhatsApp Image 2026-02-09 at 12.11.10 PM.jpeg`."
+        },
+        {
+          "path": "frontend/public/assets/gallery/whatsapp-image-2026-02-09-121111-1.jpeg",
+          "operation": "create",
+          "description": "Add gallery image at the exact public path referenced by `frontend/src/App.tsx`. Create from the corresponding uploaded workspace file `WhatsApp Image 2026-02-09 at 12.11.11 PM (1).jpeg`."
+        },
+        {
+          "path": "frontend/public/assets/gallery/whatsapp-image-2026-02-09-121111-2.jpeg",
+          "operation": "create",
+          "description": "Add gallery image at the exact public path referenced by `frontend/src/App.tsx`. Create from the corresponding uploaded workspace file `WhatsApp Image 2026-02-09 at 12.11.11 PM (2).jpeg`."
+        },
+        {
+          "path": "frontend/public/assets/gallery/whatsapp-image-2026-02-09-121111-3.jpeg",
+          "operation": "create",
+          "description": "Add gallery image at the exact public path referenced by `frontend/src/App.tsx`. Create from the corresponding uploaded workspace file `WhatsApp Image 2026-02-09 at 12.11.11 PM (3).jpeg`."
+        },
+        {
+          "path": "frontend/public/assets/gallery/whatsapp-image-2026-02-09-121111.jpeg",
+          "operation": "create",
+          "description": "Add gallery image at the exact public path referenced by `frontend/src/App.tsx`. Create from the corresponding uploaded workspace file `WhatsApp Image 2026-02-09 at 12.11.11 PM.jpeg`."
+        },
+        {
+          "path": "frontend/public/assets/gallery/whatsapp-image-2026-02-09-121730.jpeg",
+          "operation": "create",
+          "description": "Add gallery image at the exact public path referenced by `frontend/src/App.tsx`. Create from the corresponding uploaded workspace file `WhatsApp Image 2026-02-09 at 12.17.30 PM.jpeg`."
+        },
+        {
+          "path": "frontend/public/assets/gallery/whatsapp-image-2026-02-09-121731-1.jpeg",
+          "operation": "create",
+          "description": "Add gallery image at the exact public path referenced by `frontend/src/App.tsx`. Create from the corresponding uploaded workspace file `WhatsApp Image 2026-02-09 at 12.17.31 PM (1).jpeg`."
+        },
+        {
+          "path": "frontend/public/assets/gallery/whatsapp-image-2026-02-09-121731-2.jpeg",
+          "operation": "create",
+          "description": "Add gallery image at the exact public path referenced by `frontend/src/App.tsx`. Create from the corresponding uploaded workspace file `WhatsApp Image 2026-02-09 at 12.17.31 PM (2).jpeg`."
+        },
+        {
+          "path": "frontend/public/assets/gallery/whatsapp-image-2026-02-09-121731.jpeg",
+          "operation": "create",
+          "description": "Add gallery image at the exact public path referenced by `frontend/src/App.tsx`. Create from the corresponding uploaded workspace file `WhatsApp Image 2026-02-09 at 12.17.31 PM.jpeg`."
+        },
+        {
+          "path": "frontend/public/assets/gallery/whatsapp-image-2026-02-09-121823.jpeg",
+          "operation": "create",
+          "description": "Add gallery image at the exact public path referenced by `frontend/src/App.tsx`. Create from the corresponding uploaded workspace file `WhatsApp Image 2026-02-09 at 12.18.23 PM.jpeg`."
+        },
+        {
+          "path": "frontend/public/assets/gallery/whatsapp-image-2026-02-09-122222.jpeg",
+          "operation": "create",
+          "description": "Add gallery image at the exact public path referenced by `frontend/src/App.tsx`. Create from the corresponding uploaded workspace file `WhatsApp Image 2026-02-09 at 12.22.22 PM.jpeg`."
+        },
+        {
+          "path": "frontend/public/assets/gallery/whatsapp-image-2026-02-09-123340.jpeg",
+          "operation": "create",
+          "description": "Add gallery image at the exact public path referenced by `frontend/src/App.tsx`. Create from the corresponding uploaded workspace file `WhatsApp Image 2026-02-09 at 12.33.40 PM.jpeg`."
+        },
+        {
+          "path": "frontend/public/assets/gallery/whatsapp-image-2026-02-09-123431.jpeg",
+          "operation": "create",
+          "description": "Add gallery image at the exact public path referenced by `frontend/src/App.tsx`. Create from the corresponding uploaded workspace file `WhatsApp Image 2026-02-09 at 12.34.31 PM.jpeg`."
+        },
+        {
+          "path": "frontend/public/assets/gallery/whatsapp-image-2026-02-09-123642.jpeg",
+          "operation": "create",
+          "description": "Add gallery image at the exact public path referenced by `frontend/src/App.tsx`. Create from the corresponding uploaded workspace file `WhatsApp Image 2026-02-09 at 12.36.42 PM.jpeg`."
+        },
+        {
+          "path": "frontend/public/assets/gallery/whatsapp-image-2026-02-09-124114.jpeg",
+          "operation": "create",
+          "description": "Add gallery image at the exact public path referenced by `frontend/src/App.tsx`. Create from the corresponding uploaded workspace file `WhatsApp Image 2026-02-09 at 12.41.14 PM.jpeg`."
+        },
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Wire the favicon into the HTML head so production builds load the icon reliably. Reference the public static asset file `frontend/public/assets/generated/ngfc-favicon.dim_64x64.png` from the document head."
+        }
+      ]
+    }
+  ]
+}

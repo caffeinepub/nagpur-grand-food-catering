@@ -1,0 +1,68 @@
+{
+  "kind": "build_request",
+  "title": "Make the app deployable and production-ready for going live",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-15",
+      "text": "Remove the trap-only backend behavior so the canister can be deployed safely. Update `backend/main.mo` to no longer call `Runtime.trap(\"This should never be called. The backend actor must not be deployed\")` and ensure the backend canister builds and deploys successfully.",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "recent-messages"
+        ],
+        "quotes": [
+          "go live"
+        ]
+      },
+      "acceptanceCriteria": [
+        "`dfx deploy` (or equivalent deployment flow) succeeds without the backend trapping during initialization or when its public methods are called.",
+        "`backend/main.mo` no longer contains a public method that intentionally traps with the message \"The backend actor must not be deployed\"."
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "text": "Ensure the production frontend loads without missing critical static assets by adding the uploaded logo image as the canonical generated logo file(s) used by the UI and confirming all referenced `/assets/generated/*` and `/assets/gallery/*` paths used in `frontend/src/App.tsx` resolve at runtime.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "recent-messages"
+        ],
+        "quotes": [
+          "go live"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The site renders without broken-image icons for the header/footer logo and hero wordmark/background.",
+        "All static asset paths referenced in `frontend/src/App.tsx` exist under `frontend/public` with matching filenames and extensions."
+      ]
+    }
+  ],
+  "constraints": [
+    "Backend must remain a single Motoko actor in `backend/main.mo` (no additional backend services).",
+    "Do not modify any files under `frontend/src/components/ui` or the immutable hook paths listed in SYSTEM_CONTEXT.",
+    "Use English for any user-facing text."
+  ],
+  "nonGoals": [
+    "Buying/configuring a custom domain or DNS settings.",
+    "Adding new product features beyond making the existing site deployable and ensuring required assets are present.",
+    "Integrating third-party auth providers (only Internet Identity is supported)."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Square logo derived from the uploaded image with transparent or clean dark background (ngfc-logo.dim_1024x1024.png)",
+      "Small favicon-style icon derived from the uploaded image (ngfc-favicon.dim_64x64.png)"
+    ],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

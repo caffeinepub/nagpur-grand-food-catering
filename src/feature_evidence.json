@@ -1,0 +1,23 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-ensure-the-production-frontend-loads-without-missing-critical-static-assets-by-adding-the-uploaded-logo-image-as-the-canonical-generated-logo-file-s-used-by-the-ui-and-confirming-all-referenced-assets-generated-and-assets-gallery-paths-used-in-frontend-src-app-tsx-resolve-at-runtime",
+      "featureTitle": "Ensure the production frontend loads without missing critical static assets by adding the uploaded logo image as the canonical generated logo file(s) used by the UI and confirming all referenced `/assets/generated/*` and `/assets/gallery/*` paths used in `frontend/src/App.tsx` resolve at runtime.",
+      "files": [
+        "frontend/index.html"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-16"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

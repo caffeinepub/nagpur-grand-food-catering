@@ -1,0 +1,33 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-10T07:18:27.691Z",
+  "summary": "REQ-15 appears partially addressed by modifying backend/main.mo to remove the trap-only deployment behavior, but the diff summary is too truncated to verify all acceptance criteria. REQ-16 is not implemented: no static asset files were added under frontend/public, despite references to /assets/generated/ngfc-favicon.dim_64x64.png and required generated logo assets.",
+  "missing_requirements": [
+    {
+      "id": "REQ-16",
+      "requirement": "Ensure the production frontend loads without missing critical static assets by adding the uploaded logo image as the canonical generated logo file(s) used by the UI and confirming all referenced `/assets/generated/*` and `/assets/gallery/*` paths used in `frontend/src/App.tsx` resolve at runtime.",
+      "reason": "No files were added, and the diff does not show any new assets under `frontend/public` (where `/assets/...` must exist). The change to `frontend/index.html` references `/assets/generated/ngfc-favicon.dim_64x64.png`, but the corresponding image file is not added in this diff summary.",
+      "evidence": [
+        "frontend/index.html",
+        "<file-diff>: ADDED FILES: none"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Removed the “Downloads/Brand Assets” section and its navigation link from the marketing site.",
+      "reason": "The BuildRequest is limited to deployability and ensuring required static assets exist; removing a site section is not requested as part of REQ-15 or REQ-16.",
+      "evidence": [
+        "frontend-file-summaries.txt (summary for frontend/src/App.tsx)"
+      ]
+    }
+  ],
+  "confidence": 0.62,
+  "changed_files": [
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.html",
+    "project_state.json"
+  ]
+}

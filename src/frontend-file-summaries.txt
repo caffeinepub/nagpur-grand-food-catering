@@ -1,0 +1,7 @@
+{
+  "frontend/src/index.css": "Global styles with premium Gold & Deep Charcoal OKLCH color system for both light and dark modes, custom animations, and design tokens.",
+  "frontend/tailwind.config.js": "Tailwind configuration with extended premium gold/charcoal theme colors, custom fonts (Inter, Playfair Display, Montserrat), gold glow shadows, and fade-in animations.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder file for React Query hooks to interact with backend; currently unused as the site is static.",
+  "frontend/src/App.tsx": "Complete single-page marketing website with hero section, services grid, photo gallery with error handling and lightbox, contact/booking section, and floating WhatsApp button. The Downloads/Brand Assets section has been removed along with its navigation link and related code.",
+  "frontend/index.html": "HTML entry point with favicon link, SEO meta tags, and proper document structure for the Nagpur Grand Food & Catering marketing site."
+}

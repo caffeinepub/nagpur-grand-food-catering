@@ -1,0 +1,74 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-10T07:18:27.694Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-15",
+        "summary": "Remove the trap-only backend behavior so the canister can be deployed safely. Update `backend/main.mo` to no longer call `Runtime.trap(\"This should never be called. The backend actor must not be deployed\")` and ensure the backend canister builds and deploys successfully.",
+        "status": "unknown",
+        "plannedFiles": [],
+        "matchedFiles": []
+      },
+      {
+        "id": "REQ-16",
+        "summary": "Ensure the production frontend loads without missing critical static assets by adding the uploaded logo image as the canonical generated logo file(s) used by the UI and confirming all referenced `/assets/generated/*` and `/assets/gallery/*` paths used in `frontend/src/App.tsx` resolve at runtime.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/public/assets/generated/ngfc-logo.dim_1024x1024.png",
+          "frontend/public/assets/generated/ngfc-favicon.dim_64x64.png",
+          "frontend/public/assets/generated/ngfc-hero-bg.dim_2400x1350.png",
+          "frontend/public/assets/generated/ngfc-wordmark.dim_1800x600.png",
+          "frontend/public/assets/gallery/whatsapp-image-2026-02-09-121110-1.jpeg",
+          "frontend/public/assets/gallery/whatsapp-image-2026-02-09-121110-2.jpeg",
+          "frontend/public/assets/gallery/whatsapp-image-2026-02-09-121110.jpeg",
+          "frontend/public/assets/gallery/whatsapp-image-2026-02-09-121111-1.jpeg",
+          "frontend/public/assets/gallery/whatsapp-image-2026-02-09-121111-2.jpeg",
+          "frontend/public/assets/gallery/whatsapp-image-2026-02-09-121111-3.jpeg",
+          "frontend/public/assets/gallery/whatsapp-image-2026-02-09-121111.jpeg",
+          "frontend/public/assets/gallery/whatsapp-image-2026-02-09-121730.jpeg",
+          "frontend/public/assets/gallery/whatsapp-image-2026-02-09-121731-1.jpeg",
+          "frontend/public/assets/gallery/whatsapp-image-2026-02-09-121731-2.jpeg",
+          "frontend/public/assets/gallery/whatsapp-image-2026-02-09-121731.jpeg",
+          "frontend/public/assets/gallery/whatsapp-image-2026-02-09-121823.jpeg",
+          "frontend/public/assets/gallery/whatsapp-image-2026-02-09-122222.jpeg",
+          "frontend/public/assets/gallery/whatsapp-image-2026-02-09-123340.jpeg",
+          "frontend/public/assets/gallery/whatsapp-image-2026-02-09-123431.jpeg",
+          "frontend/public/assets/gallery/whatsapp-image-2026-02-09-123642.jpeg",
+          "frontend/public/assets/gallery/whatsapp-image-2026-02-09-124114.jpeg",
+          "frontend/index.html"
+        ],
+        "matchedFiles": [
+          "frontend/public/assets/generated/ngfc-logo.dim_1024x1024.png",
+          "frontend/public/assets/generated/ngfc-favicon.dim_64x64.png",
+          "frontend/index.html"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/index.html",
+    "frontend/public/assets/generated/ngfc-favicon.dim_64x64.png",
+    "frontend/public/assets/generated/ngfc-logo.dim_1024x1024.png",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

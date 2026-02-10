@@ -1,0 +1,166 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 9,
+  "summary": "Create a premium, professional digital presence and branding package for Nagpur Grand Food & Catering (Dharampeth, Nagpur), including website layout and marketing assets aligned with the chosen color palette, tagline, services, and contact/WhatsApp CTAs.",
+  "architectural_notes": [
+    "Brand direction: premium look using either “Premium Gold & Deep Charcoal” or “Classic White & Maroon” palette.",
+    "Primary website CTA: “Book Your Date”.",
+    "Include professional contact block (Pankaj 7620861034, Ashish 8888851877) and location (Dharampeth, Nagpur near Children’s Park).",
+    "Social handle: @NagpurGrandCatering; use chef-hat-with-smile logo as profile picture.",
+    "Display business name “Nagpur Grand Food & Catering” in bold.",
+    "Remove/hide any “aurumcoal” text/labeling from the UI/branding.",
+    "Remove/hide the “Brand Assets” / “Downloads” section and its heading text (“Download our professional branding materials”)."
+  ],
+  "known_issues": [
+    "Gallery section is not visible (likely rendering/layout/asset issue)."
+  ],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Square logo derived from the uploaded image with transparent or clean dark background (ngfc-logo.dim_1024x1024.png)\n- Small favicon-style icon derived from the uploaded image (ngfc-favicon.dim_64x64.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-premium-single-page-marketing-website-for-nagpur-grand-food-catering-with-a-hero-section-containing-1-headline-nagpur-s-trusted-name-for-grand-occasions-2-sub-headline-authentic-north-south-indian-catering-for-weddings-corporate-events-and-special-celebrations-and-3-a-primary-cta-button-labeled-book-your-date",
+      "title": "Create a premium single-page marketing website for “Nagpur Grand Food & Catering” with a hero section containing: (1) headline “Nagpur’s Trusted Name for Grand Occasions”, (2) sub-headline “Authentic North & South Indian Catering for Weddings, Corporate Events, and Special Celebrations.”, and (3) a primary CTA button labeled “Book Your Date”.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-services-section-displayed-as-a-professional-tile-grid-with-exactly-these-service-categories-and-descriptions-1-grand-weddings-full-service-catering-from-achari-to-buffet-2-corporate-events-clean-professional-high-tea-and-lunch-setups-3-special-occasions-birthdays-anniversaries-and-puja-ceremonies",
+      "title": "Implement a “Services” section displayed as a professional tile/grid with exactly these service categories and descriptions: (1) “Grand Weddings: Full-service catering from Achari to Buffet.” (2) “Corporate Events: Clean, professional high-tea and lunch setups.” (3) “Special Occasions: Birthdays, Anniversaries, and Puja ceremonies.”",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-professional-contact-block-that-includes-primary-contacts-pankaj-7620861034-ashish-8888851877-location-dharampeth-nagpur-near-children-s-park-social-handles-instagram-facebook-nagpurgrandcatering",
+      "title": "Add a professional contact block that includes: Primary Contacts: Pankaj (7620861034) & Ashish (8888851877); Location: “Dharampeth, Nagpur (Near Children’s Park)”; Social handles: Instagram/Facebook “@NagpurGrandCatering”.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-floating-whatsapp-inquiry-button-labeled-inquire-on-whatsapp-that-opens-whatsapp-chat-to-a-configured-phone-number-using-wa-me-links-use-pankaj-s-number-7620861034-and-pre-fills-a-short-message-requesting-a-quote-english",
+      "title": "Add a floating WhatsApp inquiry button labeled “Inquire on WhatsApp” that opens WhatsApp chat to a configured phone number using wa.me links (use Pankaj’s number: 7620861034) and pre-fills a short message requesting a quote (English).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-consistent-premium-visual-theme-across-the-site-using-a-premium-gold-deep-charcoal-palette-preferred-with-modern-typography-generous-spacing-and-elegant-card-styling-ensure-the-theme-is-used-consistently-across-hero-services-gallery-and-contact-sections",
+      "title": "Apply a consistent premium visual theme across the site using a “Premium Gold & Deep Charcoal” palette (preferred) with modern typography, generous spacing, and elegant card styling; ensure the theme is used consistently across hero, services, gallery, and contact sections.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-gallery-section-that-showcases-the-uploaded-catering-event-photos-in-a-premium-grid-with-lightbox-viewing-tap-click-to-enlarge",
+      "title": "Create a “Gallery” section that showcases the uploaded catering/event photos in a premium grid with lightbox viewing (tap/click to enlarge).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-downloads-section-that-provides-downloadable-print-ready-branding-assets-1-a-menu-brochure-2-a-digital-visiting-card-and-3-a-set-of-social-media-post-templates-all-aligned-with-the-site-branding-name-tagline-palette-contacts-location-nagpurgrandcatering",
+      "title": "Add a “Downloads” section that provides downloadable, print-ready branding assets: (1) a menu brochure, (2) a digital visiting card, and (3) a set of social media post templates, all aligned with the site branding (name, tagline, palette, contacts, location, @NagpurGrandCatering).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-generated-curated-static-images-logo-wordmark-brochure-visiting-card-social-templates-and-any-decorative-brand-elements-into-frontend-static-assets-under-frontend-public-assets-generated-and-render-them-in-the-ui-where-relevant-hero-logo-downloads-previews",
+      "title": "Add generated/curated static images (logo/wordmark, brochure, visiting card, social templates, and any decorative brand elements) into frontend static assets under frontend/public/assets/generated and render them in the UI where relevant (hero/logo, downloads previews).",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-site-header-branding-so-the-business-name-displays-as-exactly-nagpur-grand-food-catering-on-a-single-line-fully-bold-and-remove-any-split-styling-that-renders-parts-of-the-name-in-different-weights-sizes",
+      "title": "Update the site header branding so the business name displays as exactly “Nagpur Grand Food & Catering” on a single line, fully bold, and remove any split styling that renders parts of the name in different weights/sizes.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-any-user-visible-occurrence-of-the-text-aurumcoal-aurumcoal-from-the-website-ui-e-g-footer-credits-badges-labels-or-metadata-shown-on-the-page",
+      "title": "Remove any user-visible occurrence of the text “aurumcoal” / “AurumCoal” from the website UI (e.g., footer credits, badges, labels, or metadata shown on the page).",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-fix-the-gallery-section-so-it-is-visible-on-the-page-and-the-gallery-grid-renders-reliably-with-the-existing-galleryimages-list-ensure-the-section-does-not-silently-disappear-due-to-missing-assets-or-rendering-errors",
+      "title": "Fix the Gallery section so it is visible on the page and the gallery grid renders reliably with the existing galleryImages list; ensure the section does not silently disappear due to missing assets or rendering errors.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-entire-downloads-section-from-the-page-including-its-section-header-text-brand-assets-and-subheader-text-download-our-professional-branding-materials",
+      "title": "Remove the entire Downloads section from the page, including its section header text \"Brand Assets\" and subheader text \"Download our professional branding materials\".",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-header-navigation-to-remove-the-downloads-link-that-points-to-downloads-ensuring-remaining-navigation-items-continue-to-work",
+      "title": "Update the header navigation to remove the \"Downloads\" link that points to #downloads, ensuring remaining navigation items continue to work.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-clean-up-unused-downloads-related-code-in-the-frontend-e-g-remove-downloadassets-data-download-handler-logic-and-any-now-unused-icon-imports-so-the-project-builds-without-lint-type-errors",
+      "title": "Clean up unused Downloads-related code in the frontend (e.g., remove downloadAssets data, download handler logic, and any now-unused icon imports) so the project builds without lint/type errors.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-production-frontend-loads-without-missing-critical-static-assets-by-adding-the-uploaded-logo-image-as-the-canonical-generated-logo-file-s-used-by-the-ui-and-confirming-all-referenced-assets-generated-and-assets-gallery-paths-used-in-frontend-src-app-tsx-resolve-at-runtime",
+      "title": "Ensure the production frontend loads without missing critical static assets by adding the uploaded logo image as the canonical generated logo file(s) used by the UI and confirming all referenced `/assets/generated/*` and `/assets/gallery/*` paths used in `frontend/src/App.tsx` resolve at runtime.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a full website layout (premium look) with hero section, service grid/tiles, contact block, and CTAs like “Book Your Date”",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add a floating “Inquire on WhatsApp” button for instant quote inquiries",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Remove the trap-only backend behavior so the canister can be deployed safely. Update `backend/main.mo` to no longer call `Runtime.trap(\"This should never be called. The backend actor must not be deployed\")` and ensure the backend canister builds and deploys successfully.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Nagpur Grand Food & Catering",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
